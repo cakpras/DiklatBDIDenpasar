@@ -1,8 +1,6 @@
 package com.cakpras.diklat.diklat.helper;
 
 
-
-
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -11,7 +9,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
 import android.view.MenuItem;
-
 
 
 import com.cakpras.diklat.diklat.R;
@@ -30,8 +27,6 @@ public class ShopActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-      //  toolbar.setTitle("Shop");
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -39,19 +34,14 @@ public class ShopActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
-                    //toolbar.setTitle("Shop");
                     return true;
                 case R.id.navigation_gifts:
-                    //toolbar.setTitle("My Gifts");
                     return true;
                 case R.id.navigation_cart:
-                    //toolbar.setTitle("Cart");
                     return true;
                 case R.id.navigation_profile:
-                    //toolbar.setTitle("Profile");
                     return true;
             }
             return false;
