@@ -1,7 +1,9 @@
-package com.cakpras.diklat.diklat;
+package com.cakpras.diklat.diklat.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.cakpras.diklat.diklat.R;
 
 public class ShopActivity extends AppCompatActivity {
 

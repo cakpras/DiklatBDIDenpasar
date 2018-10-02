@@ -1,4 +1,4 @@
-package com.cakpras.diklat.diklat;
+package com.cakpras.diklat.diklat.activity;
 
 import android.content.Context;
 import android.content.SharedPreferences;
