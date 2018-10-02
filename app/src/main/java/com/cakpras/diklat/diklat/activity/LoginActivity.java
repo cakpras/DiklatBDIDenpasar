@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +19,7 @@ import com.cakpras.diklat.diklat.app.AppConfig;
 import com.cakpras.diklat.diklat.app.AppController;
 import com.cakpras.diklat.diklat.helper.SQLiteHandler;
 import com.cakpras.diklat.diklat.helper.SessionManager;
+import com.cakpras.diklat.diklat.helper.ShopActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -61,7 +61,7 @@ public class LoginActivity extends Activity {
         // Check if user is already logged in or not
         if (session.isLoggedIn()) {
             // User is already logged in. Take him to main activity
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this, ShopActivity.class);
             startActivity(intent);
             finish();
         }
@@ -141,7 +141,7 @@ public class LoginActivity extends Activity {
 
                         // Launch main activity
                         Intent intent = new Intent(LoginActivity.this,
-                                MainActivity.class);
+                                ShopActivity .class);
                         startActivity(intent);
                         finish();
                     } else {
